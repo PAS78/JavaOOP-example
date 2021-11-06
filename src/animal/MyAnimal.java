@@ -11,11 +11,17 @@ public class MyAnimal extends Animal {
         this.mesto = place;
     }
 
+    // Функции объектов класса
+    public void say (String blabla) {
+        System.out.println(blabla + ", рядом с Сашей.");
+    }
+
     // Метод
     public String getMesto (){
         return this.mesto;
     }
 
-    // Переменная класса для обращения через класс без объекта
+     // Переменная класса для обращения через класс без объекта
     public static int summ = 478;
+
 }

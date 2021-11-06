@@ -5,12 +5,22 @@ public class Animal {
     private float tail; // хвост
 
     // Конструктор обращения к классу
-    public Animal (int paws, float weight) {
-        this.paws = paws;
-        this.tail = weight;
+    public Animal (int paws, float tail) {
+        if (paws != 0 && paws <=4 && tail < 2f) {
+            this.paws = paws;
+            this.tail = tail;
+        } else {
+            say("Невидана зверушка!");
+            return;
+        }
     }
-    // Конструктор по умолчанию (без параметров)
+    // Конструктор класса по умолчанию (без параметров)
     public Animal () {}
+
+    // Конструктор для копирования объектов
+    public Animal(Animal animal) {
+        this(animal.getPaws(), animal.getTail());
+    }
 
     // Функции объектов класса
     void say (String blabla) {
@@ -32,7 +42,7 @@ public class Animal {
     }
 
     public void setTail(float tail){
-        if (tail <= 1)
+        if (tail < 2)
             this.tail = tail;
         else System.out.println("Не многовато ли хвостов?");
     }
