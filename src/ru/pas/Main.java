@@ -8,7 +8,7 @@ public class Main {
         // Создаем объект Свинтус класса Анимал
         Animal Svintus = new Animal();
 
-        // Присваения значений объекут Свинтус
+        // Присваение значений объекут Свинтус
         Svintus.setPaws(4);
         Svintus.setTail(1);
 
@@ -20,9 +20,9 @@ public class Main {
 
         // Вызов функции say для объекта Свинтус с методамии внутри
         Svintus.say("Хрю-Хрюю, у меня " + Svintus.getPaws() + " лапы и " + Svintus.getTail() + " хвост.");
-        Masya.say("Мяу! у меня тоже " + Masya.getPaws() + " лапы и " + Masya.getTail() + " хвост!");
+        Masya.say("Мяу! у меня тоже " + Masya.getPaws() + " лапы и " + Masya.getTail() + " хвост.");
 
-        System.out.println("А у меня " + Alkor.getPaws() + " лапы и " + Alkor.getTail() + " от хвоста. А ловить меня надо у: " + Alkor.mesto);
+        System.out.println("А у меня " + Alkor.getPaws() + " лапы и " + Alkor.getTail() + " от хвоста.\nА ловить меня надо у: " + Alkor.getMesto());
 
         // Прямое обращение к переменной summ класса МойАнимал
         System.out.println(MyAnimal.summ);

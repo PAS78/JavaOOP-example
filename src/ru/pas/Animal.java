@@ -24,11 +24,17 @@ public class Animal {
 
     // Методы
     public void setPaws(int paws){
-        this.paws = paws;
+        if (paws != 0 && paws <=4)
+            this.paws = paws;
+        else {
+            System.out.println("Что-то с лапами не то...");
+        }
     }
 
     public void setTail(float tail){
-        this.tail = tail;
+        if (tail <= 1)
+            this.tail = tail;
+        else System.out.println("Не многовато ли хвостов?");
     }
 
     public int getPaws (){
