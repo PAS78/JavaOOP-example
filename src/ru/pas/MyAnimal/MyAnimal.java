@@ -1,4 +1,4 @@
-package animal;
+package ru.pas.MyAnimal;
 
 import ru.pas.Animal;
 
@@ -22,6 +22,6 @@ public class MyAnimal extends Animal {
     }
 
      // Переменная класса для обращения через класс без объекта
-    public static int summ = 478;
+    public static String hello = "Тут будут мои животные.";
 
 }

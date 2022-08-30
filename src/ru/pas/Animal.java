@@ -6,6 +6,7 @@ public class Animal {
 
     // Конструктор обращения к классу
     public Animal (int paws, float tail) {
+        // Проверка данных
         if (paws != 0 && paws <=4 && tail < 2f) {
             this.paws = paws;
             this.tail = tail;
@@ -14,6 +15,7 @@ public class Animal {
             return;
         }
     }
+
     // Конструктор класса по умолчанию (без параметров)
     public Animal () {}
 
@@ -23,11 +25,9 @@ public class Animal {
     }
 
     // Функции объектов класса
-    void say (String blabla) {
-        System.out.println(blabla);
-    }
+    void say (String blabla) { System.out.println(blabla); }
 
-    // функция класса для обращения через класс без объекта
+    // функция класса для обращения через класс без создания объекта
     static void write(String str){
         System.out.println(str);
     }
