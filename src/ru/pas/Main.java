@@ -25,9 +25,10 @@ public class Main {
         // Создание объекта Alkor класса MyAnimal с присвоением значений
         MyAnimal Alkor = new MyAnimal(3,0.25f,"соседей");
 
-        // Создание объекта Филя класса МойАнимал с данными Мася
+        // Создание (коипрование) объекта Филя класса МойАнимал с данными Мася
         Animal Filya = new Animal(Masya); // а вот так будет копия двух: Animal Filya = Masya;
 
+        // Задали параметры через Сеттер метод
         Filya.setPaws(2);
         Masya.setPaws(3);
 

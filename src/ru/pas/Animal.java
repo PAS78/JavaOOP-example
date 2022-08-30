@@ -1,6 +1,8 @@
 package ru.pas;
 
 public class Animal {
+
+    // Поля объекта
     private int paws; // лапы
     private float tail; // хвост
 
