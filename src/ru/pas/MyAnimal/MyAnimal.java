@@ -16,7 +16,8 @@ public class MyAnimal extends Animal {
     // Переопределение метода
     @Override
     public void say (String blabla) {
-        System.out.println(blabla + ", рядом с Сашей.");
+        // Обращение к родительтскому классу
+        super.say(blabla + ", рядом с Сашей.");
     }
 
     // Метод
