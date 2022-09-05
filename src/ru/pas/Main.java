@@ -1,6 +1,7 @@
 package ru.pas;
 
 // Импортирум класс MyAnimal пакета ru.pas.MyAnimal
+import ru.pas.Figure.Rect;
 import ru.pas.MyAnimal.MyAnimal;
 
 public class Main {
@@ -37,6 +38,11 @@ public class Main {
         Masya.say("Мася: Мяу! у меня тоже " + Masya.getPaws() + " лапы и " + Masya.getTail() + " хвост.");
         Filya.say("Филя: Мурр. Я как Мася. " + Filya.getPaws() + " лапы и " + Filya.getTail() + " хвост.");
         Alkor.say("Алькор: А у меня " + Alkor.getPaws() + " лапы и " + Alkor.getTail() + " от хвоста.\nА ловить меня надо у " + Alkor.getMesto());
+
+        Rect MyRect = new Rect(0, 0, 5, 7);
+
+        System.out.println("Площадь: " + MyRect.getArea());
+        System.out.println("Периметр: " + MyRect.getPerimetr());
 
     }
 }
