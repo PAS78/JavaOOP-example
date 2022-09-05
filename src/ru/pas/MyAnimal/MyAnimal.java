@@ -3,7 +3,9 @@ package ru.pas.MyAnimal;
 import ru.pas.Animal;
 
 public class MyAnimal extends Animal {
-    private String mesto; // где ловить
+
+    // Дополнительное поля у нового Объекта - где ловить
+    private String mesto;
 
     // Конструктор вызова
     public MyAnimal (int paws, float tail, String place){
