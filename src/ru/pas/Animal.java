@@ -28,7 +28,7 @@ public class Animal {
     }
 
     // Функции объектов класса
-    void say (String blabla) { System.out.println(blabla); }
+    public void say (String blabla) { System.out.println(blabla); }
 
     // Функция класса для обращения через класс без создания объекта
     static void write(String str){

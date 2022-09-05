@@ -22,11 +22,11 @@ public class Main {
         // Создание объекта Masya класса Animal с присвоением значений
         Animal Masya = new Animal(4, 1f);
 
+        // Создание (копирование) объекта Филя класса МойАнимал с данными Мася
+        Animal Filya = new Animal(Masya); // а вот так будет копия двух: Animal Filya = Masya;
+
         // Создание объекта Alkor класса MyAnimal с присвоением значений
         MyAnimal Alkor = new MyAnimal(3,0.25f,"соседей");
-
-        // Создание (коипрование) объекта Филя класса МойАнимал с данными Мася
-        Animal Filya = new Animal(Masya); // а вот так будет копия двух: Animal Filya = Masya;
 
         // Задали параметры через Сеттер метод
         Filya.setPaws(2);
@@ -35,8 +35,8 @@ public class Main {
         // Вызов функции say для объектов Svintus и Masya с методами внутри
         Svintus.say("Свинтус: Хрю-Хрюю, у меня " + Svintus.getPaws() + " лапы и " + Svintus.getTail() + " хвост.");
         Masya.say("Мася: Мяу! у меня тоже " + Masya.getPaws() + " лапы и " + Masya.getTail() + " хвост.");
-        Alkor.say("Алкор: А у меня " + Alkor.getPaws() + " лапы и " + Alkor.getTail() + " от хвоста.\nА ловить меня надо у " + Alkor.getMesto());
-        Filya.say("Филя: Мурр. Я как Мася." + Filya.getPaws() + " лапы и " + Filya.getTail() + " хвост.");
+        Filya.say("Филя: Мурр. Я как Мася. " + Filya.getPaws() + " лапы и " + Filya.getTail() + " хвост.");
+        Alkor.say("Алькор: А у меня " + Alkor.getPaws() + " лапы и " + Alkor.getTail() + " от хвоста.\nА ловить меня надо у " + Alkor.getMesto());
 
     }
 }

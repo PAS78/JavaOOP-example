@@ -5,22 +5,23 @@ import ru.pas.Animal;
 public class MyAnimal extends Animal {
 
     // Дополнительное поля у нового Объекта - где ловить
-    private String mesto;
+    private String place;
 
     // Конструктор вызова
     public MyAnimal (int paws, float tail, String place){
         super(paws, tail);
-        this.mesto = place;
+        this.place = place;
     }
 
-    // Функции объектов класса
+    // Переопределение метода
+    @Override
     public void say (String blabla) {
         System.out.println(blabla + ", рядом с Сашей.");
     }
 
     // Метод
     public String getMesto (){
-        return this.mesto;
+        return this.place;
     }
 
      // Переменная класса для обращения через класс без объекта
